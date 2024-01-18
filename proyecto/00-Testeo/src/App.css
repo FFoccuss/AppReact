@@ -47,14 +47,14 @@
     display: block;
   }
   
-  .tw-tarjetaX-button.is-following {
+  .tw-tarjetaX-button.teSigue {
     border: 1px solid #bbb;
     background: transparent;
     color: #fff;
     width: 140px;
   }
   
-  .tw-tarjetaX-button.is-following:hover {
+  .tw-tarjetaX-button.teSigue:hover {
     background-color: rgba(255, 0, 0, 0.178);
     color: red;
     border: 1px solid red;
@@ -62,11 +62,11 @@
     opacity: 1;
   }
   
-  .tw-tarjetaX-button.is-following:hover .tw-followCard-text {
+  .tw-tarjetaX-button.teSigue:hover .tw-tarjetaX-text {
     display: none;
   }
   
-  .tw-tarjetaX-button.is-following:hover .tw-followCard-stopFollow {
+  .tw-tarjetaX-button.teSigue:hover .tw-tarjetaX-stopFollow {
     display: block;
   }
   

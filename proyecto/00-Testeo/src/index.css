@@ -1,8 +1,14 @@
 body{
     margin:0;
-    background: rgb(31, 31, 31);
+    background: rgb(14, 13, 13);
     font-family: system-ui;
     display: grid;
     place-content: center;
     min-height: 50vh;
+}
+
+.App{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
 }

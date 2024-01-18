@@ -2,11 +2,25 @@ import './App.css'
 import { TarjetaX } from './TarjetaX.jsx'
 export function App () {
     return (
-        <>
-                <TarjetaX nombre="Manuel Guerrero Rodriguez" nombreUsuario="FFoccuss"/>
-                <TarjetaX nombre="Federico Guerrero" nombreUsuario="SSuccoFF"/>
 
-        </>
+        <section className='App'>
+                <TarjetaX 
+                teSigue={true} 
+                nombre="Manuel Guerrero Rodriguez" 
+                nombreUsuario="FFoccuss"/>
+                <TarjetaX 
+                teSigue={false} 
+                nombre="Lailo Guerrero" 
+                nombreUsuario="SSuccoFF"/>
+                <TarjetaX 
+                teSigue={false} 
+                nombre="Federico Guerrero" 
+                nombreUsuario="Fede"/>
+                <TarjetaX  
+                teSigue={true} nombre="Roman Guerrero" 
+                nombreUsuario="Roman"/>
+
+        </section>
         
     )
 }

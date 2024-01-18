@@ -1,4 +1,13 @@
+import { useState } from "react"
+
 export function TarjetaX ({nombreUsuario,nombre}) {
+    const [teSigue,setTeSigue]= useState(false)
+    const clickSeguir = () => {
+        setTeSigue(!teSigue)
+    }
+    const text = teSigue ? 'Siguiendo' : 'Seguir'
+    const buttonClassname = teSigue ? 'tw-tarjetaX-button teSigue'
+    : 'tw-tarjetaX-button'
     return (
         <article className='tw-tarjetaX'>
             <header className='tw-tarjetaX-header'>
@@ -12,8 +21,8 @@ export function TarjetaX ({nombreUsuario,nombre}) {
             </div>
             </header>
             <aside>
-                <button className='tw-tarjetaX-button'>
-                    Follow
+                <button className={buttonClassname} onClick={clickSeguir}>
+                    {text}
                 </button>
             </aside>
         </article>
